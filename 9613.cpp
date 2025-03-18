@@ -35,5 +35,6 @@ int main() {
         }
         
         cout << sum << '\n';
+	delete[] arr;
     }
 }
