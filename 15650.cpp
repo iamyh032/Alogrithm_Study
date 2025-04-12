@@ -5,8 +5,8 @@ bool isUsed[10] = {};
 int result[10] = {};
 
 void func(int index, int n, int m){
-    if(index==m) {
-        for(int i=0; i<index; i++){
+    if(index>m) {
+        for(int i=1; i<index; i++){
             cout << result[i] << " ";
         }
         cout << "\n";
@@ -23,5 +23,5 @@ void func(int index, int n, int m){
 int main() {
     int N, M;
     cin >> N >> M;
-    func(0, N, M);
+    func(1, N, M);
 }
